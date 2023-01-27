@@ -11,6 +11,7 @@ namespace NavalBattle_SharpCoders.View
     {
         public static void ShowBoard(Piece[,] ocean)
         {
+            Console.Clear();
             for (int i = 0; i < 8; i++)
             {
                 Console.Write(i);
@@ -21,6 +22,17 @@ namespace NavalBattle_SharpCoders.View
                 Console.WriteLine();
             }
             Console.WriteLine("    0     1     2     3     4     5     6     7");
+        }
+
+        public static bool PlaceSelection(Piece[,] ocean, Board board)
+        {
+            Console.Write("Digite a Linha: ");
+            int line = int.Parse(Console.ReadLine());
+            Console.Write("Digite a Coluna: ");
+            int column = int.Parse(Console.ReadLine());
+            Console.WriteLine("--------------------------");
+
+            return board.SelectPiece(ocean, line, column);
         }
     }
 }

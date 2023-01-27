@@ -2,7 +2,7 @@
 {
     public abstract class Piece
     {
-        public char Simbol { get; private set; }
+        public char Simbol { get; set; }
         public bool Hidden { get; set; }
         public int Line { get; private set; }
         public int Column { get; private set; }

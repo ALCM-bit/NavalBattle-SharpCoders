@@ -10,7 +10,7 @@ namespace NavalBattle_SharpCoders.Models.Pieces
     {
         public Ship(int line, int column) : base(line, column)
         {
-            Hidden = true;
+            
         }
     }
 }
